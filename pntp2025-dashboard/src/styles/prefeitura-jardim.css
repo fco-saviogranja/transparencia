@@ -1,0 +1,115 @@
+@import url('./styles/prefeitura-jardim.css');
+
+:root {
+  --cor-primaria: #1a4d2e;
+  --cor-secundaria: #f9c846;
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #222;
+  --fonte-principal: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h2, h3 {
+  color: var(--cor-primaria);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+  background: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+button:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicionando estilo para o logo da prefeitura */
+.logo-prefeitura {
+    height: 60px;
+    margin-bottom: 10px;
+}
