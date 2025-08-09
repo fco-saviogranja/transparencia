@@ -1,0 +1,32 @@
+{
+  "name": "pntp2025-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard application for public transparency alerts regarding PNTP 2025.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "PNTP",
+    "transparency",
+    "dashboard",
+    "public",
+    "alerts"
+  ],
+  "author": "Prefeitura de Jardim",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "axios": "^0.21.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.27.0"
+  }
+}
