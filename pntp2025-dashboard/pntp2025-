@@ -1,0 +1,26 @@
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const cron = require('node-cron');
+
+require('./models/initDb');
+
+app.use(cors());
+app.use(express.json());
+
+const usersRouter = require('./routes/users');
+const criteriosRouter = require('./routes/criterios');
+const { verificarPrazos } = require('./services/notificacoes');
+
+app.use('/api/users', usersRouter);
+app.use('/api/criterios', criteriosRouter);
+
+app.get('/', (req, res) => {
+  res.send('API PNTP 2025 rodando!');
+});
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
